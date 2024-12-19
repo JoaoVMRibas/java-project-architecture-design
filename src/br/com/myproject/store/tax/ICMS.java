@@ -1,6 +1,6 @@
 package br.com.myproject.store.tax;
 
-import br.com.myproject.store.models.Budget;
+import br.com.myproject.store.budget.Budget;
 
 import java.math.BigDecimal;
 
