@@ -6,9 +6,9 @@ import java.math.BigDecimal;
 
 public class DiscountCalculator {
     public BigDecimal calculate(Budget budget) {
-        Discount discount = new DiscountByQuantityOfItems(
+        Discount discountChain = new DiscountByQuantityOfItems(
                 new DiscountByBudgetValue(
                         new NoDiscount()));
-        return discount.calculate(budget);
+        return discountChain.calculate(budget);
     }
 }
