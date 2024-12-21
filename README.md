@@ -20,3 +20,5 @@ The **Template Method** pattern is a behavioral design pattern that defines the 
 #### How it works?
 The template method pattern defines a "template method" that executes a sequence of operations in a specific order, where some of these operations can be delegated to abstract methods or "hooks" that will be implemented by the subclasses.
 
+### State
+The State Pattern is a behavioral design pattern that allows an object to alter its behavior when its internal state changes. This pattern is particularly useful when an object must exhibit different behavior based on its state, making the state transitions explicit and manageable.
