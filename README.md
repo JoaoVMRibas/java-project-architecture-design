@@ -25,3 +25,6 @@ The **State Pattern** is a behavioral design pattern that allows an object to al
 
 ### Command
 The **Command Pattern** is a behavioral design pattern used to encapsulate a request as an object, thereby allowing you to parameterize objects with different requests, queue or log requests, and support undoable operations. This pattern decouples the object that invokes the operation from the one that knows how to perform it.
+
+### Observer Pattern
+The **Observer Pattern** is a behavioral design pattern used to establish a one-to-many dependency between objects, so when one object (the subject) changes its state, all its dependents (the observers) are notified and updated automatically. 
