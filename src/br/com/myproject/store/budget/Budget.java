@@ -1,6 +1,7 @@
 package br.com.myproject.store.budget;
 
 import br.com.myproject.store.budget.status.Approved;
+import br.com.myproject.store.budget.status.Completed;
 import br.com.myproject.store.budget.status.Status;
 import br.com.myproject.store.budget.status.UnderReview;
 
@@ -48,5 +49,9 @@ public class Budget {
 
     public void conclude(){
         this.status.conclude(this);
+    }
+
+    public boolean isConcluded() {
+        return this.status instanceof Completed;
     }
 }
