@@ -4,8 +4,14 @@ import br.com.myproject.store.budget.Budget;
 
 import java.math.BigDecimal;
 
-public class ICMS implements Tax {
-    public BigDecimal calculate(Budget budget) {
+public class ICMS extends Tax {
+
+    public ICMS(Tax otherTax) {
+        super(otherTax);
+    }
+
+    @Override
+    protected BigDecimal executeCalculation(Budget budget) {
         return budget.getValue().multiply(new BigDecimal("0.1"));
     }
 }

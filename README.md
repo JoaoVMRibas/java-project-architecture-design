@@ -31,3 +31,6 @@ The **Observer Pattern** is a behavioral design pattern used to establish a one-
 
 ### Adapter
 The **Adapter Pattern** is a structural design pattern that allows two incompatible interfaces to work together. It acts as a bridge between the existing interface of one component and the expected interface of another. The main idea is to create a wrapper (the adapter) that translates requests from one interface into a format that the other interface can understand.
+
+### Decorator
+The **Decorator Pattern** is a structural design pattern that allows behavior to be dynamically added to individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class. This pattern is particularly useful when you need to extend the functionality of objects in a flexible and reusable way.

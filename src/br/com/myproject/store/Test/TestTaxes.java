@@ -9,10 +9,11 @@ import java.math.BigDecimal;
 
 public class TestTaxes {
     public static void main(String[] args) {
-        Budget budget = new Budget(new BigDecimal("100"),4);
+        Budget budget = new Budget(new BigDecimal("100"),1);
         TaxCalculator calculator = new TaxCalculator();
 
-        System.out.println(calculator.calculate(budget,new ISS()));
-        System.out.println(calculator.calculate(budget,new ICMS()));
+        System.out.println(calculator.calculate(budget,new ISS(null)));
+        System.out.println(calculator.calculate(budget,new ICMS(null)));
+        System.out.println(calculator.calculate(budget,new ICMS(new ISS(null))));
     }
 }
