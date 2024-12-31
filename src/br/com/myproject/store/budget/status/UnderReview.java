@@ -17,4 +17,8 @@ public class UnderReview extends Status {
     public void disapprove(Budget budget) {
         budget.setStatus(new Rejected());
     }
+    @Override
+    public String toString() {
+        return "UnderReview";
+    }
 }

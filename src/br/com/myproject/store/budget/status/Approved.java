@@ -13,4 +13,8 @@ public class Approved extends Status{
     public void conclude(Budget budget) {
         budget.setStatus(new Completed());
     }
+    @Override
+    public String toString() {
+        return "Approved";
+    }
 }

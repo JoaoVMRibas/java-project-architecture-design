@@ -34,3 +34,6 @@ The **Adapter Pattern** is a structural design pattern that allows two incompati
 
 ### Decorator
 The **Decorator Pattern** is a structural design pattern that allows behavior to be dynamically added to individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class. This pattern is particularly useful when you need to extend the functionality of objects in a flexible and reusable way.
+
+### Composite
+The **Composite Pattern** is a structural design pattern that allows you to compose objects into tree-like structures to represent part-whole hierarchies. This pattern lets clients treat individual objects and groups of objects uniformly, simplifying operations on complex structures.

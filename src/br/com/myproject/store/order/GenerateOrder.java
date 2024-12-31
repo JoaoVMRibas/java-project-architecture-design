@@ -3,28 +3,21 @@ package br.com.myproject.store.order;
 import br.com.myproject.store.budget.Budget;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 public class GenerateOrder {
     private String client;
-    private BigDecimal budgetValue;
-    private int budgetTotalItems;
+    private Budget budget;
 
-    public GenerateOrder(String client, BigDecimal budgetValue, int budgetTotalItems) {
+    public GenerateOrder(String client, Budget budget) {
         this.client = client;
-        this.budgetValue = budgetValue;
-        this.budgetTotalItems = budgetTotalItems;
-    }
-
-    public BigDecimal getBudgetValue() {
-        return budgetValue;
+        this.budget = budget;
     }
 
     public String getClient() {
         return client;
     }
 
-    public int getBudgetTotalItems() {
-        return budgetTotalItems;
+    public Budget getBudget() {
+        return budget;
     }
 }

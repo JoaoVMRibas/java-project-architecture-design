@@ -6,16 +6,18 @@ import br.com.myproject.store.budget.status.Status;
 import br.com.myproject.store.budget.status.UnderReview;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Budget {
+public class Budget implements Budgetable {
     private BigDecimal value;
-    private int quantityItems;
     private Status status;
+    private List<Budgetable> budgetItems;
 
-    public Budget(BigDecimal value, int quantityItems) {
-        this.value = value;
-        this.quantityItems = quantityItems;
+    public Budget() {
+        this.value = BigDecimal.ZERO;
         this.status = new UnderReview();
+        this.budgetItems = new ArrayList<>();
     }
 
     public BigDecimal getValue() {
@@ -23,7 +25,7 @@ public class Budget {
     }
 
     public int getQuantityItems() {
-        return quantityItems;
+        return budgetItems.size();
     }
 
     public Status getStatus() {
@@ -53,5 +55,10 @@ public class Budget {
 
     public boolean isConcluded() {
         return this.status instanceof Completed;
+    }
+
+    public void add(Budgetable item) {
+        this.value = this.value.add(item.getValue());
+        budgetItems.add(item);
     }
 }
